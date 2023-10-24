@@ -41,3 +41,9 @@ button:active{
     margin-left: 70px;
     margin-right: 70px;
 }
+@media (max-width:480px){
+    #p1{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
