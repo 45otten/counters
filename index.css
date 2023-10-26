@@ -5,9 +5,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: gray;
+    background-image: url('1345056-skull-wallpapers-for-laptops-1920x1080-hd.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 label{
-    font-size: 60px;
+    font-size: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +20,7 @@ button{
     padding: 10px;
     background-color: transparent;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
     color: gray;
 }
 button:active{
@@ -35,7 +40,7 @@ button:active{
     text-align: center;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid white;
+    border: 2px solid white;
     box-shadow: 0 0 5px 0 white;
     border-radius: 10px;
     margin-left: 70px;
@@ -47,4 +52,52 @@ button:active{
         margin-right: 60px;
         box-shadow: 0 0 10px 0 white;
     }
+}
+.checkbox{
+    font-size: medium;
+    margin-top: 10px;
+}
+.ch{
+    text-align: center;
+    margin-left: 50px;
+}
+.premium{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+.numberguessinggame{
+   margin:20px 0 20px ;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.numberguessinggame h2{
+    float :left ;
+}
+.numberguessinggame>.box{
+    font-size: 20px !important;
+    text-align: center;
+}
+.numberguessinggame input{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid gray;
+    width: 10%;
+    color: gray;
+    font-size: 20px;
+}
+.numberguessinggame input::-webkit-inner-spin-button{
+    appearance: none;
+}
+.numberguessinggame input:focus{
+    outline: none;
+}
+#gbtn{
+    width: 60%;
+    margin-top: 20px;
+}
+#rbtn{
+    width: 60%;
+    margin-top: 10px;
 }

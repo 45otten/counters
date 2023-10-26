@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/362991c868.js" crossorigin="anonymous"></script>
+
     <title>Counter</title>
 </head>
 <body>
@@ -20,6 +22,36 @@
         <p id="p1">0</p>
         <button id="resetdice">reset</button>
     </div>
+    <div class="numberguessinggame">
+        <div>
+        <h2>Number Guessing Game</h2><i class="fa-solid fa-question fa-sm" style="color: #808080;" title="Browser will think of a number (from 1-6) and u have to guess it by typing it in the input filled,if its correct u wil get an alert or else it will tell u that u are wrong"></i><br></div>
+        <div class="box">
+           <label>Enter a number</label>
+           <input type="number" id="guessed">
+        </div>
+        <button id="gbtn">Guess</button>
+        <button id="rbtn">Reset</button>
+     </div>
+    <div class="checkboxdiv">
+        <label for="checkbox" class="checkbox ch">Subscribe my site</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <div class="premium">
+            
+                <label for="visa" class="checkbox">Visa</label>
+                <input style="margin-right: 10px;" type="radio" name="card" id="visa">
+            
+            
+                <label for="visa" class="checkbox">MasterCard</label>
+                <input style="margin-right: 10px;" type="radio" name="card" id="MasterCard">
+            
+            
+                <label for="visa" class="checkbox">Paypal</label>
+                <input style="margin-right: 10px;" type="radio" name="card" id="paypal">
+            
+        </div>
+        <button type="submit" id="checkbtn" style="width: 100%;">sumbit</button>
+    </div>
+    
     <script src="index.js"></script>
 </body>
 </html>
