@@ -22,7 +22,7 @@ document.getElementById("resetdice").onclick=function(){
     x=0;
     document.getElementById("p1").innerHTML=x;
 }
-let answer=Math.floor(Math.random()*6+1)
+let answer=Math.floor(Math.random()*10+1)
 let guessed=0;
 let guess;
 
