@@ -26,11 +26,18 @@ let answer=Math.floor(Math.random()*10+1)
 let guessed=0;
 let guess;
 
+
 document.getElementById('gbtn').onclick=function(){
     guess=document.getElementById('guessed').value
     guessed+=1
-
-    if(guess==answer){
+    
+    if(guess>10){
+        alert('You can only enter number between 1-10')
+    }
+     else if(guess<1){
+        alert('You can only enter nummber between 1-10')
+    }
+    else if(guess==answer){
         alert(`${answer} is the number it took u ${guessed}guess.`)
     }
     else if(guess<answer){
@@ -39,7 +46,6 @@ document.getElementById('gbtn').onclick=function(){
     else{
         alert('Wrong!Its Smaller than your guess')
     }
-    
 }
 document.getElementById('rbtn').onclick=function(){
     guessed=0;
