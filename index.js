@@ -12,6 +12,11 @@ document.getElementById("increase").onclick=function(){
     document.getElementById("counter").innerHTML=count;
 }
 
+
+
+//roll the dice
+
+
 let x;
 
 document.getElementById("roll").onclick=function(){
@@ -22,6 +27,11 @@ document.getElementById("resetdice").onclick=function(){
     x=0;
     document.getElementById("p1").innerHTML=x;
 }
+
+
+//number guessing game
+
+
 let answer=Math.floor(Math.random()*10+1)
 let guessed=0;
 let guess;
@@ -51,6 +61,11 @@ document.getElementById('rbtn').onclick=function(){
     guessed=0;
     answer=Math.floor(Math.random()*6+1)
 }
+
+
+//for premium content
+
+
 document.getElementById("checkbtn").onclick=function(){
     const checkbox=document.getElementById("checkbox");
     const visa=document.getElementById("visa");
