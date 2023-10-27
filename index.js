@@ -41,11 +41,8 @@ document.getElementById('gbtn').onclick=function(){
     guess=document.getElementById('guessed').value
     guessed+=1
     
-    if(guess>10){
+    if(guess>10 || guess<1){
         alert('You can only enter number between 1-10')
-    }
-    else if(guess<1){
-        alert('You can only enter nummber between 1-10')
     }
     else if(guess==answer){
         alert(`${answer} is the number it took u ${guessed} guesses.`)
