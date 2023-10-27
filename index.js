@@ -48,7 +48,7 @@ document.getElementById('gbtn').onclick=function(){
         alert('You can only enter nummber between 1-10')
     }
     else if(guess==answer){
-        alert(`${answer} is the number it took u ${guessed}guess.`)
+        alert(`${answer} is the number it took u ${guessed} guesses.`)
     }
     else if(guess<answer){
         alert('Wrong!Its Greater than your guess')
@@ -62,20 +62,44 @@ document.getElementById('rbtn').onclick=function(){
     answer=Math.floor(Math.random()*6+1)
 }
 
+//tempreture convertor
+
+// let temp;
+// temp=Number(temp);
+//  const ce=document.getElementsByName('ctemp');
+//  const fa=document.getElementsByName('ftemp');
+
+// function c(temp){
+//    return (temp-32)*(5/9);
+// }
+
+// function f(temp){
+//     return (9/5)*(temp+32);
+// }
+
+//  document.getElementById("submittemp").onclick=function(){
+
+//     temp=document.getElementById("tempinput").value
+//  if(temp == null || temp == ""){
+//      alert("Please input a tempreture")
+//  }
+//  }
 
 //for premium content
 
 
 document.getElementById("checkbtn").onclick=function(){
+    
     const checkbox=document.getElementById("checkbox");
     const visa=document.getElementById("visa");
     const MasterCard=document.getElementById("MasterCard");
     const paypal=document.getElementById("paypal");
 
-    if(visa.checked && checkbox.checked){
-       alert("You are subscribed!")
+    if(!(checkbox.checked)){
+       alert("PLEASE CHECK THAT SUBSCRIBE BUTTON")
     }
-    else if(MasterCard.checked && checkbox.checked)
+    else{
+    if(MasterCard.checked && checkbox.checked)
     {
         alert("You are subscribed!")
     }
@@ -83,8 +107,13 @@ document.getElementById("checkbtn").onclick=function(){
     {
         alert("You are subscribed!")
     }
-    else{
-        alert("Please Select a payment method! or Check that Subscribe Button!")
+    else if(visa.checked && checkbox.checked)
+    {
+        alert("You are subscribed!")
     }
+    else{
+        alert("Please Select a payment method!")
+    }
+}
 }
 
