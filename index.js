@@ -44,7 +44,7 @@ document.getElementById('gbtn').onclick=function(){
     if(guess>10){
         alert('You can only enter number between 1-10')
     }
-     else if(guess<1){
+    else if(guess<1){
         alert('You can only enter nummber between 1-10')
     }
     else if(guess==answer){
@@ -64,26 +64,34 @@ document.getElementById('rbtn').onclick=function(){
 
 //tempreture convertor
 
-// let temp;
-// temp=Number(temp);
-//  const ce=document.getElementsByName('ctemp');
-//  const fa=document.getElementsByName('ftemp');
+function c(temp){
+    return (temp-32)*5/9;
+}
+function f(temp){
+    return 9/5*temp+32;
+}
+let temp;
+temp=Number(temp);
 
-// function c(temp){
-//    return (temp-32)*(5/9);
-// }
+document.getElementById("submittemp").onclick=function(){
+    
+    if(document.getElementById('ctemp').checked){
+        temp=document.getElementById('tempinput').value;        
+        temp=c(temp)
+        temp = temp.toFixed(2);
+        document.getElementById('p2').innerHTML=temp+"℃"
+    }
+    else if(document.getElementById('ftemp').checked){
+        temp=document.getElementById('tempinput').value;
+        temp=f(temp)
+        temp = temp.toFixed(2);
+        document.getElementById('p2').innerHTML=temp+"℉"
+    }
+    else{
+        alert('Please select a method of conversion')
+    }
+}
 
-// function f(temp){
-//     return (9/5)*(temp+32);
-// }
-
-//  document.getElementById("submittemp").onclick=function(){
-
-//     temp=document.getElementById("tempinput").value
-//  if(temp == null || temp == ""){
-//      alert("Please input a tempreture")
-//  }
-//  }
 
 //for premium content
 
@@ -98,7 +106,7 @@ document.getElementById("checkbtn").onclick=function(){
     if(!(checkbox.checked)){
        alert("PLEASE CHECK THAT SUBSCRIBE BUTTON")
     }
-    else{
+    else{    
     if(MasterCard.checked && checkbox.checked)
     {
         alert("You are subscribed!")
@@ -116,4 +124,11 @@ document.getElementById("checkbtn").onclick=function(){
     }
 }
 }
-
+let fruits=["apple","orange","bannana"];
+fruits[2]="mango"
+fruits.push("lemon");
+// fruits.pop();
+fruits.unshift("kiwi");
+fruits.shift();
+let length=fruits.length;
+console.log(length);

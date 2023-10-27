@@ -101,3 +101,33 @@ button:active{
     width: 60%;
     margin-top: 10px;
 }
+.fortemp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+#p2{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+#tempinput{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: gray;
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+}
+#tempinput:focus{
+    outline: none;
+}
+#tempinput::-webkit-inner-spin-button{
+    appearance: none;
+}
+#submittemp{
+    width: 70%;
+    margin-top: 30px;
+    text-align: center;
+}
