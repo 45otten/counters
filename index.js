@@ -67,6 +67,13 @@ function c(temp){
 function f(temp){
     return 9/5*temp+32;
 }
+function kf(temp){
+    return c(temp)+273.15
+}
+function kc(temp){
+    temp=Number(temp);
+    return temp+273.15
+}
 let temp;
 temp=Number(temp);
 
@@ -83,6 +90,18 @@ document.getElementById("submittemp").onclick=function(){
         temp=f(temp)
         temp = temp.toFixed(2);
         document.getElementById('p2').innerHTML=temp+"℉"
+    }
+    else if(document.getElementById('kftemp').checked){
+        temp=document.getElementById('tempinput').value;
+        temp=kf(temp)
+        temp = temp.toFixed(2);
+        document.getElementById('p2').innerHTML=temp+"k"
+    }
+    else if(document.getElementById('kctemp').checked){
+        temp=document.getElementById('tempinput').value;
+        temp=kc(temp)
+        // temp = temp.toFixed(2);
+        document.getElementById('p2').innerHTML=temp+"k"
     }
     else{
         alert('Please select a method of conversion')
@@ -121,11 +140,17 @@ document.getElementById("checkbtn").onclick=function(){
     }
 }
 }
+
+
 let fruits=["apple","orange","bannana"];
-fruits[2]="mango"
-fruits.push("lemon");
+//fruits[2]="mango"
+//fruits.push("lemon");
 // fruits.pop();
-fruits.unshift("kiwi");
-fruits.shift();
-let length=fruits.length;
-console.log(length);
+//fruits.unshift("kiwi");
+//fruits.shift();
+//let length=fruits.length;
+//console.log(length);
+let order=fruits.sort()
+for(let fruit of fruits){
+    console.log(fruit)
+}
